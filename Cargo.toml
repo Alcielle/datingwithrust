@@ -1,0 +1,21 @@
+[package]
+name = "datapp"
+version = "0.1.0"
+authors = ["adas"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[build-dependencies]
+cmake = "0.1"
+
+[dependencies]
+fltk = { version = "^1", features = ["fltk-bundled"] }
+rand = "0.8.3"
+
+[lib]
+name = "lib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "main"
+path = "src/bin/main.rs"
